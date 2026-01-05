@@ -1,0 +1,212 @@
+/* ================== GLOBAL ================== */
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1e3c72, #0a1a33);
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* ================== TITLE ================== */
+
+.game-title {
+  font-size: 64px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 6px;
+  color: #ffd700;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* ================== MENU LAYOUT ================== */
+
+#mode-select {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+/* ================== MENU CARDS ================== */
+
+.menu-card {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+}
+
+.menu-card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* ================== BUTTONS ================== */
+
+.menu-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.red-btn {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: white;
+}
+
+.yellow-btn {
+  background: linear-gradient(to right, #f9d423, #ffb347);
+  color: #333;
+}
+
+/* ================== DIFFICULTY ================== */
+
+.difficulty-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.difficulty-select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* ================== GAME BOARD ================== */
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(7, 80px);
+  gap: 8px;
+  background: #0b5ed7;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ================== DISCS ================== */
+
+.disc {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: -90px;
+  left: 0;
+  transition: top 0.35s ease-in;
+}
+
+.disc.red {
+  background: red;
+}
+
+.disc.yellow {
+  background: gold;
+}
+
+.disc.drop {
+  top: 0;
+}
+
+/* ================== WIN GLOW ================== */
+
+.cell.win {
+  box-shadow: 0 0 20px 6px gold;
+  animation: glow 0.8s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px gold; }
+  to   { box-shadow: 0 0 25px gold; }
+}
+
+/* ================== MODAL ================== */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #1e1e1e;
+  padding: 25px 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+  animation: pop 0.3s ease-out;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.modal-buttons button {
+  margin: 10px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}

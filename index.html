@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+<h1 class="game-title">CONNECT 4</h1>
+
+<div id="mode-select" class="menu-wrapper">
+
+  <h1 class="game-title">CONNECT 4</h1>
+
+  <div class="menu-row">
+
+    <div class="menu-card">
+      <h2>👥 Human vs Human</h2>
+      <button id="btn-human" class="menu-btn red-btn" type="button">
+        Start Game
+      </button>
+    </div>
+
+    <div class="menu-card">
+      <h2>🤖 Human vs Computer</h2>
+
+      <label class="difficulty-label">Difficulty</label>
+      <select id="difficulty-select" class="difficulty-select">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+        <option value="expert">Expert</option>
+
+      </select>
+
+      <button id="btn-ai" class="menu-btn yellow-btn" type="button">
+        Start Game
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div id="game">
+  <div id="turn-indicator"></div>
+  <div id="board"></div>
+</div>
+
+<!-- WIN MODAL -->
+<div id="win-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2 id="win-message">Winner!</h2>
+
+    <div class="modal-buttons">
+      <button id="modal-restart" type="button">Restart</button>
+      <button id="modal-change-mode" type="button">Change Mode</button>
+    </div>
+  </div>
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
