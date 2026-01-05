@@ -64,7 +64,25 @@ This allows the AI to:
 
 ## 🚀 Getting Started
 
+
 ### ▶ Run Locally
 ```bash
 npm install
 npm start
+
+## 📸 Demo
+
+### 🎮 Gameplay Preview
+![Connect 4 Demo](screenshots/demo.gif)
+
+### 🖼 Screenshots
+
+**Main Menu**
+![Main Menu](screenshots/menu.png)
+
+**Gameplay**
+![Gameplay](screenshots/gameplay.png)
+
+**Win State**
+![Win State](screenshots/win.png)
+
