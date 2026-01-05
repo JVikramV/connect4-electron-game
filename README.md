@@ -72,6 +72,8 @@ npm start
 
 ---
 
+---
+
 ## 📸 Demo
 
 ### 🎮 Gameplay Preview
@@ -89,4 +91,6 @@ npm start
 
 **Win State**  
 ![Win State](https://github.com/user-attachments/assets/7f99)
+
+
 
