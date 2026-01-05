@@ -73,16 +73,21 @@ npm start
 ## 📸 Demo
 
 ### 🎮 Gameplay Preview
-![Connect 4 Demo](screenshots/demo.gif)
+![Connect 4 Demo](screenshots/demo.gif)![gif](https://github.com/user-attachments/assets/3effe80b-e96b-4476-a843-994db92458c6)
+
 
 ### 🖼 Screenshots
 
 **Main Menu**
-![Main Menu](screenshots/menu.png)
+![Main Menu](screenshots/menu.png)<img width="1237" height="987" alt="menu" src="https://github.com/user-attachments/assets/ebcac8b2-5a0e-4f06-820a-7263de746356" />
+
 
 **Gameplay**
-![Gameplay](screenshots/gameplay.png)
+![Gameplay]<img width="1902" height="1021" alt="gameplay" src="https://github.com/user-attachments/assets/f5903041-0215-464a-88da-d4fafcf92fde" />
+
 
 **Win State**
-![Win State](screenshots/win.png)
+![Win State](screenshots/win.png)<img width="1918" height="1020" alt="win" src="https://github.com/user-attachments/assets/7f998aff-2238-4755-9092-912211bec3c5" />
+
+
 
