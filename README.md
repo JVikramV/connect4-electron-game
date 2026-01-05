@@ -79,15 +79,16 @@ npm start
 ### 🖼 Screenshots
 
 **Main Menu**
-![Main Menu](screenshots/menu.png)<img width="1237" height="987" alt="menu" src="https://github.com/user-attachments/assets/ebcac8b2-5a0e-4f06-820a-7263de746356" />
+<img width="1237" height="987" alt="menu" src="https://github.com/user-attachments/assets/ebcac8b2-5a0e-4f06-820a-7263de746356" />
 
 
 **Gameplay**
-![Gameplay]<img width="1902" height="1021" alt="gameplay" src="https://github.com/user-attachments/assets/f5903041-0215-464a-88da-d4fafcf92fde" />
+<img width="1902" height="1021" alt="gameplay" src="https://github.com/user-attachments/assets/f5903041-0215-464a-88da-d4fafcf92fde" />
 
 
 **Win State**
 ![Win State](screenshots/win.png)<img width="1918" height="1020" alt="win" src="https://github.com/user-attachments/assets/7f998aff-2238-4755-9092-912211bec3c5" />
+
 
 
 
