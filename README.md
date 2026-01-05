@@ -70,9 +70,7 @@ This allows the AI to:
 npm install
 npm start
 
----
-
----
+```md
 
 ## 📸 Demo
 
@@ -94,6 +92,7 @@ npm start
 
 **Win State**  
 <img width="1918" height="1020" alt="win" src="https://github.com/user-attachments/assets/f4a9e633-e46f-4c38-add8-957844c31d05" />
+
 
 
 
